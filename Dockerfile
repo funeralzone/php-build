@@ -2,6 +2,7 @@ FROM php:7.1-cli
 
 RUN apt-get update && \
     apt-get -y install zip && \
+    apt-get -y install git && \
     apt-get -y install python3-pip python3-dev && \
     cd /usr/local/bin && \
     ln -s /usr/bin/python3 python && \
