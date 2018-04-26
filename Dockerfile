@@ -22,6 +22,7 @@ RUN apt-key update && \
         php7.1-zip \
         php7.1-json \
         php7.1-imap \
+        php7.1-intl \
         php-pgsql
 
 # AWS cli
