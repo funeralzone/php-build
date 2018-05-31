@@ -48,3 +48,9 @@ RUN . $HOME/.nvm/nvm.sh && \
 
 # Yarn
 RUN npm install -g yarn
+
+# SASS
+RUN wget https://github.com/sass/dart-sass/releases/download/1.5.0/dart-sass-1.5.0-linux-x64.tar.gz && \
+    tar -xvzf dart-sass-1.5.0-linux-x64.tar.gz && \
+    mv -v dart-sass/* /usr/local/bin
+
